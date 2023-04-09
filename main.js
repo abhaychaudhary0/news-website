@@ -1,10 +1,11 @@
 console.log('news')
 // ec0741ff1f4d4610980c583b24e57940
 let source = 'bbc-news ';
+let api ='ec0741ff1f4d4610980c583b24e57940'
 
 let newsAccordian = document.getElementById('newsAccordion');
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=ec0741ff1f4d4610980c583b24e57940`, true)
+xhr.open('GET', `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${api}`, true)
 
 xhr.onload = function () {
     if (this.status === 200) {
