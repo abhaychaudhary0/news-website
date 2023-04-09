@@ -4,7 +4,7 @@ let source = 'bbc-news ';
 
 let newsAccordian = document.getElementById('newsAccordion');
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `https://newsapi.org/v2/top-headlines?sources=${source}%20&apiKey=ec0741ff1f4d4610980c583b24e57940`, true)
+xhr.open('GET', `https://gnews.io/api/v4/search?q=example&apikey=d1523501539257f041b784a0d9447d5e`, true)
 
 xhr.onload = function () {
     if (this.status === 200) {
